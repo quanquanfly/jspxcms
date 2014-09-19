@@ -1,0 +1,54 @@
+[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'dependency'.
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jspxcms Maven Webapp
+[INFO]    task-segment: [dependency:tree]
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.alibaba-inc.com/nexus/content/groups/alirepositiry//com/jhlabs/imaging/01012005/imaging-01012005.pom
+[INFO] Unable to find resource 'com.jhlabs:imaging:pom:01012005' in repository central (http://repo.alibaba-inc.com/nexus/content/groups/alirepositiry/)
+Downloading: http://repo.alibaba-inc.com/nexus/content/groups/alirepositiry//com/jhlabs/imaging/01012005/imaging-01012005.pom
+[INFO] Unable to find resource 'com.jhlabs:imaging:pom:01012005' in repository 3rd-party (http://forge.octo.com/archiva/repository/3rd-party)
+Downloading: http://repo.alibaba-inc.com/nexus/content/groups/alirepositiry//com/jhlabs/imaging/01012005/imaging-01012005.jar
+[INFO] Unable to find resource 'com.jhlabs:imaging:jar:01012005' in repository central (http://repo.alibaba-inc.com/nexus/content/groups/alirepositiry/)
+Downloading: http://repo.alibaba-inc.com/nexus/content/groups/alirepositiry//com/jhlabs/imaging/01012005/imaging-01012005.jar
+[INFO] Unable to find resource 'com.jhlabs:imaging:jar:01012005' in repository 3rd-party (http://forge.octo.com/archiva/repository/3rd-party)
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Failed to resolve artifact.
+
+Missing:
+----------
+1) com.jhlabs:imaging:jar:01012005
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=com.jhlabs -DartifactId=imaging -Dversion=01012005 -Dpackaging=jar -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=com.jhlabs -DartifactId=imaging -Dversion=01012005 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+  Path to dependency: 
+  	1) com.jspxcms:jspxcms:war:1.0
+  	2) com.octo.captcha:jcaptcha:jar:1.0
+  	3) com.jhlabs:imaging:jar:01012005
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  com.jspxcms:jspxcms:war:1.0
+
+from the specified remote repositories:
+  b2bmirror-all (http://repo.alibaba-inc.com/nexus/content/groups/alirepositiry/)
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2 seconds
+[INFO] Finished at: Fri Sep 19 10:16:00 CST 2014
+[INFO] Final Memory: 17M/245M
+[INFO] ------------------------------------------------------------------------
